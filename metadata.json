@@ -1,0 +1,6 @@
+{
+  "name": "Siarkannn Portfolio",
+  "description": "Interactive, highly responsive portfolio landing page for Siarkannn, a Bandung-based post-production color grading and finishing studio, built with React, Tailwind CSS, and Framer Motion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

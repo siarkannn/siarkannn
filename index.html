@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>siarkannn</title>
+
+    <!-- Poster: paint first frame immediately, zero black flash -->
+    <link rel="preload" href="/poster.jpg" as="image" />
+
+    <!-- Video: start fetching first segment early -->
+    <link rel="preload" href="/video/showreel.mp4" as="video" type="video/mp4" />
+
+    <!-- Audio -->
+    <link rel="preload" href="/audio/far_far_away.mp3" as="audio" type="audio/mpeg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
