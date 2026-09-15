@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <title>KAN — Independent Post-Production</title>
+    <meta name="description" content="Independent Post-Production" />
+    <meta name="keywords" content="siarkannn, Arkan Taqiyuddin, Colorist, Color Grading, Post-Production, DaVinci Resolve, Commercial, Film, Indonesia" />
+    <meta name="author" content="Arkan Taqiyuddin" />
+    <link rel="canonical" href="https://siarkannn.vercel.app/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Instant font & poster preloads for zero-latency startup on all mobile & desktop browsers -->
+    <link rel="preload" href="/fonts/gotham-bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/gotham-medium.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/fonts/gotham-regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/poster.jpg" as="image" type="image/jpeg" fetchpriority="high" />
+
+    <!-- Critical instant dark base: eliminates any 1-frame blank/white flash before JS or CSS hydration -->
+    <style>
+      html, body, #root {
+        background-color: #000000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+
+    <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="siarkannn" />
+    <meta name="application-name" content="siarkannn" />
+
+    <!-- Schema.org / WhatsApp / Telegram Microdata -->
+    <meta itemprop="name" content="KAN — Independent Post-Production" />
+    <meta itemprop="description" content="Independent Post-Production" />
+    <meta itemprop="image" content="https://siarkannn.vercel.app/og-image.jpg" />
+    <link rel="image_src" href="https://siarkannn.vercel.app/og-image.jpg" />
+
+    <!-- Open Graph / WhatsApp / Instagram / Facebook / Telegram / LinkedIn Preview -->
+    <meta property="og:site_name" content="KAN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://siarkannn.vercel.app/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="KAN — Independent Post-Production" />
+    <meta property="og:description" content="Independent Post-Production" />
+    <meta property="og:image" content="https://siarkannn.vercel.app/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://siarkannn.vercel.app/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="KAN — Independent Post-Production" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter / X / Discord / Slack Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@siarkannn" />
+    <meta name="twitter:creator" content="@siarkannn" />
+    <meta name="twitter:url" content="https://siarkannn.vercel.app/" />
+    <meta name="twitter:title" content="KAN — Independent Post-Production" />
+    <meta name="twitter:description" content="Independent Post-Production" />
+    <meta name="twitter:image" content="https://siarkannn.vercel.app/og-image.jpg" />
+    <meta name="twitter:image:alt" content="KAN — Independent Post-Production" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://siarkannn.vercel.app/#organization",
+            "name": "KAN",
+            "alternateName": ["siarkannn", "KAN Studio"],
+            "url": "https://siarkannn.vercel.app/",
+            "logo": "https://siarkannn.vercel.app/og-image.jpg",
+            "image": "https://siarkannn.vercel.app/og-image.jpg",
+            "description": "Independent Post-Production studio specializing in Color Grading and Finishing.",
+            "sameAs": [
+              "https://www.instagram.com/siarkannn/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://siarkannn.vercel.app/#website",
+            "url": "https://siarkannn.vercel.app/",
+            "name": "KAN — Independent Post-Production",
+            "description": "Independent Post-Production",
+            "publisher": {
+              "@id": "https://siarkannn.vercel.app/#organization"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Instant Synchronous Route & Document Title Resolution for zero-latency tab title on all routes -->
+    <script>
+      (function() {
+        try {
+          if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+          }
+          var p = window.location.pathname.replace(/\/+$/, '') || '/';
+          var savedRoute = sessionStorage.getItem('kan_active_route');
+          var isReload = false;
+          try {
+            var nav = performance.getEntriesByType('navigation')[0];
+            if (nav && nav.type === 'reload') isReload = true;
+            if (window.performance && window.performance.navigation && window.performance.navigation.type === 1) isReload = true;
+          } catch (e) {}
+          var inIframe = window.self !== window.top;
+
+          if ((p === '/' || p === '/kan') && savedRoute && savedRoute !== '/' && savedRoute !== '/kan' && (isReload || inIframe)) {
+            window.history.replaceState(null, '', savedRoute);
+            p = savedRoute.replace(/\/+$/, '') || '/';
+          }
+
+          if (p === '/' || p === '/kan') {
+            document.title = 'Home - KAN';
+          } else if (p.indexOf('/work/') === 0) {
+            var raw = p.slice(6).split('?')[0].split('#')[0];
+            var slug = decodeURIComponent(raw).toLowerCase().trim();
+            if (slug.indexOf('ayub') !== -1) document.title = 'Ayubyayulestariofficial - KAN';
+            else if (slug.indexOf('byayu') !== -1) document.title = 'Byayudyahandari - KAN';
+            else if (slug.indexOf('oase') !== -1) document.title = 'OASE "Desert Of Dubai" - KAN';
+            else if (slug.indexOf('filmmaking') !== -1) document.title = 'Sony Filmmaking Experience - KAN';
+            else if (slug.indexOf('immateur') !== -1) document.title = 'Immateurplayground - KAN';
+            else if (slug.indexOf('festival') !== -1) document.title = 'Sony Alpha Festival 2026 - KAN';
+            else document.title = 'Work - KAN';
+          } else if (p === '/work' || p === '/works') {
+            document.title = 'Work - KAN';
+          } else if (p === '/about') {
+            document.title = 'About - KAN';
+          } else if (p === '/artist/arkantaqiyuddin' || p === '/arkan' || p === '/arkantaqiyuddin') {
+            document.title = 'Arkan Taqiyuddin - Colorist - KAN';
+          } else if (p === '/artist' || p.indexOf('/artist/') === 0) {
+            document.title = 'Artist - KAN';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-black text-white antialiased selection:bg-white selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
