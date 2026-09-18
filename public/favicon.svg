@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-45 -45 726 726" fill="none" shape-rendering="geometricPrecision">
+  <rect x="0" y="0" width="166" height="636" rx="16" ry="16" fill="#FFFFFF"/>
+  <path d="M 426 0 L 636 0 L 370 284 L 166 336 L 206 240 Z" fill="#FFFFFF"/>
+  <path d="M 166 336 L 370 336 L 636 636 L 438 636 Z" fill="#FFFFFF"/>
+</svg>

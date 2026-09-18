@@ -1,0 +1,8 @@
+{
+  "name": "KAN — Independent Post-Production",
+  "description": "Independent Post-Production",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
