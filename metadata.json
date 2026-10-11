@@ -1,0 +1,8 @@
+{
+  "name": "KAN — Independent Post-Production",
+  "description": "Independent post-production studio specializing in color grading, finishing, and visual storytelling for commercials, films, and music videos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
